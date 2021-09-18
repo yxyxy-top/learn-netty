@@ -1,0 +1,20 @@
+
+ hsweb:
+      auth:
+        users:
+            admin:
+              name: \u8D85\u7EA7\u7BA1\u7406\u5458
+              username: admin
+              password: admin
+              roles:
+                - id: admin
+                  name: \u7BA1\u7406\u5458
+                - id: user
+                  name: \u7528\u6237
+              permissions:
+                - id: user-manager
+                  actions:
+                  dataAccesses:
+                    - action: query
+                      type: DENY_FIELDS
+                      fields: password,salt

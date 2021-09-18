@@ -1,0 +1,24 @@
+tio:
+  core:
+    server:
+      # websocket port default 9876
+      port: 6789
+      # \u5FC3\u8DF3\u65F6\u95F4
+      heartbeat-timeout: 60000
+      # \u96C6\u7FA4\u914D\u7F6E \u9ED8\u8BA4\u5173\u95ED
+    cluster:
+      enabled: false
+      # \u96C6\u7FA4\u662F\u901A\u8FC7redis\u7684Pub/Sub\u5B9E\u73B0\uFF0C\u6240\u4EE5\u9700\u8981\u914D\u7F6ERedis
+      redis:
+        ip: 127.0.0.1
+        port: 6379
+      all: true
+      group: true
+      ip: true
+      user: true
+      # SSL \u914D\u7F6E
+      ssl:
+        enabled: false
+        key-store:
+        password:
+        trust-store:
